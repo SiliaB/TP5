@@ -1,19 +1,31 @@
-//
-// Created by Faustine on 05/04/2020.
-//
+#ifndef TP2_TG_ARETE_H
+#define TP2_TG_ARETE_H
+#include <ctime>
+#include <cstdlib>
+#include <iostream>
+#include "Arrete.h"
 
-#ifndef TP3_ARRETE_H
-#define TP3_ARRETE_H
+class Arete {
+private :
 
+    int m_poids;
+    int depart;
+    int arrive;
 
-class Arrete {
-private:
-    int poids;
-    int Sommet1,sommet2;
 public:
+    Arete (int depart, int arrive,int poids);
+    ~Arete()=default;
+
+    int getPoids() const;
+    int setPoids(int newPoids);
+    int getDepart() const;
+    int getArrive() const;
+
+
 
 
 };
 
 
-#endif //TP3_ARRETE_H
+#endif //TP2_TG_ARETE_H
+

@@ -20,9 +20,11 @@ void afficherArborescence(size_t s0, const std::vector<int> &arborescence) {
 }
 
 int main() {
-    int s0 = 1;
     Graphe g{"../graphe.txt"};
-    std::cout << g;
-    afficherArborescence(s0, g.Kruskal());
+    //std::cout << g;
+    g.Kruskal();
+    g.afficherKruskal();
+
+
     return 0;
 }
